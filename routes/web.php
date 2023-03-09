@@ -61,23 +61,23 @@ Route::get('/', function () {
       $footer_links = [
             [
                   'label' => 'digital comics',
-                  'src' => 'buy-comics-digital-comics.png',
+                  'src' => 'resources/img/buy-comics-digital-comics.png',
                   'url' => '#'
             ], [
                   'label' => 'dc merchandise',
-                  'src' => 'buy-comics-merchandise.png',
+                  'src' => 'resources/img/buy-comics-merchandise.png',
                   'url' => '#'
             ], [
                   'label' => 'subscription',
-                  'src' => 'buy-comics-subscriptions.png',
+                  'src' => 'resources/img/buy-comics-subscriptions.png',
                   'url' => '#'
             ], [
                   'label' => 'comic shop locator',
-                  'src' => 'buy-comics-shop-locator.png',
+                  'src' => 'resources/img/buy-comics-shop-locator.png',
                   'url' => '#'
             ], [
                   'label' => 'dc power visa',
-                  'src' => 'buy-dc-power-visa.svg',
+                  'src' => 'resources/img/buy-dc-power-visa.svg',
                   'url' => '#'
             ],
       ];
@@ -185,23 +185,23 @@ Route::get('/', function () {
             [
                   'label' => 'facebook',
                   'url' => '#',
-                  'src' => "footer-facebook.png"
+                  'src' => "resources/img/footer-facebook.png"
             ], [
                   'label' => 'twitter',
                   'url' => '#',
-                  'src' => "footer-twitter.png"
+                  'src' => "resources/img/footer-twitter.png"
             ], [
                   'label' => 'youtube',
                   'url' => '#',
-                  'src' => "footer-youtube.png"
+                  'src' => "resources/img/footer-youtube.png"
             ], [
                   'label' => 'pinterest',
                   'url' => '#',
-                  'src' => "footer-pinterest.png"
+                  'src' => "resources/img/footer-pinterest.png"
             ], [
                   'label' => 'periscope',
                   'url' => '#',
-                  'src' => "footer-periscope.png"
+                  'src' => "resources/img/footer-periscope.png"
             ],
       ];
 

@@ -4,8 +4,8 @@
             <div class="container">
                   @foreach ($footer_links as $link)
                   <div>
-                        <img :src="getImagePath(`../assets/img/${link.src}`)" alt="link.label">
-                        <a href="link.url">{{ $link['label'] }}</a>
+                        <img src="{{ Vite::asset($link['src']) }}" alt="{{ $link['label'] }}">
+                        <a href="{{ $link['url'] }}">{{ $link['label'] }}</a>
                   </div>
                   @endforeach
             </div>
@@ -20,7 +20,7 @@
                               <ul>
                                     @foreach ($section['links'] as $link)
                                     <li>
-                                          <a href="link.url">{{ $link['label'] }}</a>
+                                          <a href="{{ $link['url'] }}">{{ $link['label'] }}</a>
                                     </li>
                                     @endforeach
                               </ul>
@@ -39,11 +39,10 @@
                   <div>
                         <h3>Follow Us</h3>
                         @foreach ($social as $a)
-                        
+                              <a href="{{ $a['url'] }}">
+                                    <img src="{{ Vite::asset($a['src']) }}" alt="{{ $a['label'] }}">
+                              </a>
                         @endforeach
-                        <a href="a.label">
-                              <img src="getImagePath(`../assets/img/${a.src}`)" alt="a.label">
-                        </a>
                   </div>
             </div>
       </div>
