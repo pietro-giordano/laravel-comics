@@ -12,7 +12,7 @@
 
             <main>
                   
-                  @yield('main')
+                  @yield('comics')
 
             </main>
 
