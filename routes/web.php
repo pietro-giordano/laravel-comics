@@ -208,7 +208,7 @@ Route::get('/', function () {
       return view('welcome', [
             'header_links' => $header_links,
             'footer_links' => $footer_links,
-            'section' => $sections,
+            'sections' => $sections,
             'social' => $social,
       ]);
 });

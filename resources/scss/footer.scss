@@ -1,0 +1,119 @@
+footer {
+      .footerbuy {
+            background-color: $main-blue;
+
+            .container {
+                  @include container;
+                  @include flex(row, space-around);
+
+                  div {
+                        @include flex(row, center, center);
+                        height: 140px;
+                        background-color: $main-blue;
+                        width: calc((1000px / 5) - 20px);
+
+                        a {
+                              text-decoration: none;
+                              text-transform: uppercase;
+                              color: white;
+                              font-size: 0.8rem;
+                              padding: 5px;
+                        }
+
+                        img {
+                              display: inline-block;
+                              max-width: 40px;
+                              max-height: 40px;
+                        }
+                  }
+            }
+      }
+
+      .footerlinks {
+            background-image: url('../img/footer-bg.jpg');
+            height: 330px;
+
+            .container {
+                  @include container;
+                  height: 100%;
+
+                  .links {
+                        @include flex(column);
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+                        padding: 30px 0px;
+                        height: 100%;
+                        background-image: url('../img/dc-logo-bg.png');
+                        background-size: 500px;
+                        background-position: right;
+                        background-repeat: no-repeat;
+
+                        >div {
+                              margin-right: 30px;
+
+                              h3 {
+                                    color: white;
+                                    text-transform: uppercase;
+                                    margin-bottom: 5px;
+                              }
+
+                              ul {
+                                    list-style: none;
+                                    margin-bottom: 20px;
+
+                                    a {
+                                          color: $footer-links;
+                                          text-decoration: none;
+                                          font-size: 0.6rem;
+
+                                          &:hover {
+                                                color: $main-blue;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+                  img {
+                        display: inline-block;
+
+                  }
+            }
+      }
+
+      .footerfooter {
+            background-color: $footer-gray;
+
+            .container {
+                  @include container;
+                  @include flex(row, space-between, center);
+                  padding: 20px 0;
+
+                  button {
+                        text-transform: uppercase;
+                        color: white;
+                        padding: 10px;
+                        background-color: $footer-gray;
+                        border: 2px solid $main-blue;
+                        cursor: pointer;
+
+                        &:hover {
+                              background-color: $main-blue;
+                        }
+                  }
+
+                  div {
+                        @include flex(row, flex-start, center);
+
+                        h3 {
+                              text-transform: uppercase;
+                              color: $main-blue;
+                        }
+
+                        >* {
+                              margin: 10px;
+                        }
+                  }
+            }
+      }
+}

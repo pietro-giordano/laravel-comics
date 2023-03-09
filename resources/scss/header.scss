@@ -1,0 +1,48 @@
+header {
+      .container {
+            @include container;
+            @include flex(row, space-between, center);
+            height: 100px;
+
+            .logo img {
+                  width: 80%;
+            }
+
+            ul {
+                  @include flex(row, flex-start, center);
+                  list-style: none;
+                  text-transform: uppercase;
+                  font-size: 0.7rem;
+                  font-weight: bold;
+                  height: 100%;
+
+                  li {
+                        @include flex(row, center, center);
+                        margin: 0px 15px;
+                        height: 100%;
+                        position: relative;
+
+                        a {
+                              text-decoration: none;
+                              color: black;
+
+                              &.active {
+                                    color: $main-blue;
+
+                                    &::after {
+                                          bottom: 0;
+                                          content: '';
+                                          display: block;
+                                          background-color: $main-blue;
+                                          height: 5px;
+                                          width: 100%;
+                                          position: absolute;
+                                    }
+                              }
+
+                        }
+                  }
+
+            }
+      }
+}

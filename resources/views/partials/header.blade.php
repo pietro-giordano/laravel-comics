@@ -8,7 +8,7 @@
                   @foreach ($header_links as $link)
                   <li>
                         <a>
-                              {{ $link->label }}
+                              {{ $link['label'] }}
                         </a>
                   </li>
                   @endforeach
